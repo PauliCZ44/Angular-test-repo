@@ -10,10 +10,11 @@ import { StarComponent } from './star/star.component';
 import { TitleCaseInputComponent } from './title-case-input/title-case-input.component';
 import { TitleCasePipePipe } from './title-case-pipe.pipe';
 import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, HelloComponent, CoursesComponent, StarComponent, TitleCaseInputComponent, TitleCasePipePipe, LikeComponent],
+  declarations: [AppComponent, HelloComponent, CoursesComponent, StarComponent, TitleCaseInputComponent, TitleCasePipePipe, LikeComponent, ZippyComponent],
   bootstrap: [AppComponent],
   providers: [CourseService]
 })
