@@ -12,6 +12,10 @@
   line-height: 1.25em;
 }
 
+.zippy__main{
+    border-radius: 3px 3px 0px 0px;
+}
+
 .zippy__main:hover {
   transition: background-color 100ms ease-in;
   cursor: pointer;
