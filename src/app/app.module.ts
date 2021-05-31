@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CourseService } from './course-service.service';
@@ -13,10 +12,23 @@ import { LikeComponent } from './like/like.component';
 import { ZippyComponent } from './zippy/zippy.component';
 import { TestFormComponent } from './test-form/test-form.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { ReactiveRegistrationFormComponent } from './reactive-registration-form/reactive-registration-form.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, HelloComponent, CoursesComponent, StarComponent, TitleCaseInputComponent, TitleCasePipePipe, LikeComponent, ZippyComponent, TestFormComponent, RegistrationFormComponent],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    CoursesComponent,
+    StarComponent,
+    TitleCaseInputComponent,
+    TitleCasePipePipe,
+    LikeComponent,
+    ZippyComponent,
+    TestFormComponent,
+    RegistrationFormComponent,
+    ReactiveRegistrationFormComponent
+  ],
   bootstrap: [AppComponent],
   providers: [CourseService]
 })
